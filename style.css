@@ -1,0 +1,107 @@
+/* This is a CSS comment. It explains what the code does. */
+
+/* Style the entire page's body */
+body {
+    font-family: Arial, sans-serif; /* Use a clean, simple font */
+    background-color: #f0f8ff;     /* A very light blue background color */
+    color: #333333;                /* A dark grey for the text */
+    text-align: center;             /* Center all the text on the page */
+}
+
+/* Style the main heading (the <h1> tag) */
+h1 {
+    color: #005a9c; /* A strong blue color for the main title */
+}
+
+/* Style the button */
+button {
+    background-color: #007bff; /* A nice blue for the button */
+    color: white;              /* White text on the button */
+    padding: 10px 20px;        /* Add some space inside the button */
+    border: none;              /* Remove the default border */
+    border-radius: 5px;        /* Make the corners slightly rounded */
+}/* --- Header & Navigation Styling --- */
+
+/* Style the <header> container */
+header {
+    background-color: white;
+    padding: 15px 30px; /* Add space inside the header: 15px top/bottom, 30px left/right */
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1); /* Add a subtle shadow underneath */
+}
+
+/* Use Flexbox to style the <nav> container */
+nav {
+    display: flex;                 /* This turns on Flexbox! */
+    justify-content: space-between; /* This pushes the items to opposite ends */
+    align-items: center;           /* This aligns them vertically in the middle */
+}
+
+/* Style the navigation links (the <a> tags) */
+nav a {
+    color: #005a9c;           /* A strong blue for the links */
+    text-decoration: none;   /* Removes the default underline */
+    font-weight: bold;         /* Makes the text bolder */
+    font-size: 16px;           /* Sets the font size */
+}/* --- Hero Section Styling --- */
+
+/* We select the section with id="hero" using the # symbol */
+#hero {
+    background-color: #005a9c; /* The same strong blue from our links */
+    color: white;              /* All text inside this section will be white */
+    min-height: 300px;         /* Make the section tall enough to feel important */
+    padding: 50px 20px;        /* Add plenty of space inside */
+
+    /* These next lines use Flexbox again to perfectly center the content */
+    display: flex;
+    flex-direction: column;    /* Stack the items vertically */
+    align-items: center;       /* Center them horizontally */
+    justify-content: center;   /* Center them vertically */
+}
+
+/* Make the main heading in the hero section bigger */
+#hero h1 {
+    font-size: 42px;     /* Much larger font for impact */
+    margin-bottom: 15px; /* A little space below the heading */
+}
+
+/* Style the paragraph in the hero section */
+#hero p {
+    font-size: 18px;
+    margin-bottom: 25px; /* More space before the button */
+}
+
+/* Make the button in the hero section stand out */
+#hero button {
+    background-color: white; /* White button */
+    color: #005a9c;           /* Blue text */
+    font-size: 16px;
+    font-weight: bold;
+}/* --- Features Section Styling --- */
+
+#features {
+    padding: 50px 20px; /* Add some space above and below the section */
+}
+
+/* Style the container we just added. The . means it's a "class" */
+.features-container {
+    display: flex;                 /* Use Flexbox again! */
+    justify-content: space-around; /* Space the items out evenly */
+    gap: 20px;                     /* Add a 20px gap between the boxes */
+}
+
+/* Style the individual feature boxes */
+.features-container div {
+    background-color: #ffffff; /* White background for the cards */
+    padding: 25px;
+    border-radius: 8px;        /* Give them nice rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* A slightly stronger shadow */
+    flex: 1;                   /* This makes all boxes take up equal space */
+}
+
+/* --- Footer Styling --- */
+
+footer {
+    background-color: #333333; /* A dark background for the footer */
+    color: white;
+    padding: 25px;
+}
